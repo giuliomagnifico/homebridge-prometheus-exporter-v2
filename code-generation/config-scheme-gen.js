@@ -99,7 +99,7 @@ function writeDocs() {
     )
 }
 
-formatting
+Promise.resolve(formatting)
     .then((code) => {
         writeFileSync(file, code)
         writeDocs()
