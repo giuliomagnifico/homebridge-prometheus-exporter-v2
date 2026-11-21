@@ -72,7 +72,8 @@ export class PrometheusServer implements HttpServer {
     statusCode: 200,
     headers: withHeaders(textContentType, {}),
     body: '',
-}
+        }
+    }
 
     onMetrics(): HttpResponse {
         return {
