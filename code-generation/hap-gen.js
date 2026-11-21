@@ -31,7 +31,7 @@ export const Services = ${JSON.stringify(serviceToUuidMap)} as const
     { filepath: 'codegen.ts', ...prettierConfig },
 )
 
-formatting
+Promise.resolve(formatting)
     .then((code) => {
         writeFileSync(file, code)
         console.log(`Finished code generation for ${file}`)
